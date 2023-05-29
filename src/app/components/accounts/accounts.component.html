@@ -1,0 +1,81 @@
+<main>
+  <app-sidebar></app-sidebar>
+  <div class="account-container">
+    <button class="account-add-item-container" (click)="toggleAddHistoryForm()">
+      <mat-icon class="account-add-item">add_circle</mat-icon>
+    </button>
+    <form
+      class="account-history-item"
+      id="add-history-form"
+      [class.form-visible]="isFormVisible"
+      [class.form-hidden]="!isFormVisible"
+    >
+      <div class="form-group">
+        <input type="text" id="title" name="title" placeholder="Title" />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="price" name="price" placeholder="Price" />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="date" name="date" placeholder="Date" />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="note" name="note" placeholder="Note" />
+      </div>
+
+      <button type="submit">Add</button>
+    </form>
+    <div class="account-history-item">
+      <mat-icon class="account-history-item-delete">delete</mat-icon>
+      <p class="account-history-item-title">Alcohol</p>
+      <p>-18 PLN</p>
+      <p>26/05/2023</p>
+      <p>Going out</p>
+    </div>
+    <div class="account-history-item">
+      <mat-icon class="account-history-item-delete">delete</mat-icon>
+      <p class="account-history-item-title">Alcohol</p>
+      <p>-18 PLN</p>
+      <p>26/05/2023</p>
+      <p>Going out</p>
+    </div>
+    <div class="account-history-item">
+      <mat-icon class="account-history-item-delete">delete</mat-icon>
+      <p class="account-history-item-title">Alcohol</p>
+      <p>-18 PLN</p>
+      <p>26/05/2023</p>
+      <p>Going out</p>
+    </div>
+    <div class="account-history-item">
+      <mat-icon class="account-history-item-delete">delete</mat-icon>
+      <p class="account-history-item-title">Alcohol</p>
+      <p>-18 PLN</p>
+      <p>26/05/2023</p>
+      <p>Going out</p>
+    </div>
+    <div class="account-history-item">
+      <mat-icon class="account-history-item-delete">delete</mat-icon>
+      <p class="account-history-item-title">Alcohol</p>
+      <p>-18 PLN</p>
+      <p>26/05/2023</p>
+      <p>Going out</p>
+    </div>
+    <div class="account-history-item">
+      <mat-icon class="account-history-item-delete">delete</mat-icon>
+      <p class="account-history-item-title">Alcohol</p>
+      <p>-18 PLN</p>
+      <p>26/05/2023</p>
+      <p>Going out</p>
+    </div>
+    <div class="account-history-item">
+      <mat-icon class="account-history-item-delete">delete</mat-icon>
+      <p class="account-history-item-title">Alcohol</p>
+      <p>-18 PLN</p>
+      <p>26/05/2023</p>
+      <p>Going out</p>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,38 @@
+aside {
+  background-color: var(--third-shade);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-title {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.sidebar-container {
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.sidebar-right {
+  font-weight: 300;
+}
+
+.sidebar-add-icon {
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+}
+
+.sidebar-add-icon:hover {
+  cursor: pointer;
+}
