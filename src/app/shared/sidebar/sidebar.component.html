@@ -1,18 +1,16 @@
 <aside>
   <p class="sidebar-title">
-    {{ isActive("/accounts") ? "Accounts" : "Overview" }}
+    {{ activeAccount ? activeAccount.name : "Overview" }}
   </p>
-  <div class="sidebar-first-container sidebar-container">
-    <p class="sidebar-left">mBank</p>
-    <p class="sidebar-right">890 PLN</p>
+
+  <div
+    class="sidebar-container"
+    *ngFor="let account of accountHistories"
+    (click)="switchAccount(account)"
+  >
+    <p class="sidebar-left">{{ account.name }}</p>
+    <p class="sidebar-right">${{ account.balance }}</p>
   </div>
-  <div class="sidebar-second-container sidebar-container">
-    <p class="sidebar-left">Revolut</p>
-    <p class="sidebar-right">6200 PLN</p>
-  </div>
-  <div class="sidebar-third-container sidebar-container">
-    <p class="sidebar-left">Santander</p>
-    <p class="sidebar-right">450 PLN</p>
-  </div>
+
   <mat-icon class="sidebar-add-icon">add</mat-icon>
 </aside>
